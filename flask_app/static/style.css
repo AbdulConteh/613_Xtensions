@@ -1,0 +1,42 @@
+.container {
+    background-color: black;
+    border: gold solid 3px;
+    height: 800px;
+    font-size: 20px;
+}
+.nav-bar {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    height: 74px;
+    border: outset gold 7px;
+    padding: 10px;
+}
+
+button, a {
+    background-color: black;
+    color: white;
+}
+
+.services {
+    background-color: gold;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 72px;
+    padding: 10px;
+    border: outset white 10px;
+}
+
+.gallery {
+    border: whitesmoke 3px solid;
+    height: fit-content;
+    color: whitesmoke;
+}
+
+p {
+    width:500px;
+    font-family: cursive;
+
+}
