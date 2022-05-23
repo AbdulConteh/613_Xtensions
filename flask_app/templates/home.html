@@ -13,6 +13,7 @@
     <div class="container">
         <div class="nav-bar">
             <button> Home </button>
+            <img src="{{ url_for('static', filename='/imgs/logo.png') }}" alt="logo" class="logo" >
             <button><a href="/contact"> Contact </a></button>
         </div>
         <br>
@@ -21,21 +22,20 @@
             <p>
                 Wig installation includes bleaching, plucking, and style. 
                 ** For best results we do encourage purchasing a wig from the 613 collection **
+                <img src="{{ url_for('static', filename='/imgs/wig_install.jpg') }}" alt="wig_install" >
+                <img src="{{ url_for('static', filename='/imgs/wig_install_2.jpg') }}" alt="wig_install_2" >
             </p>
             <br>
             <h2> Wig Construction - $175 </h2>
             <p>
                 This service is for wig making. Bundles can be purchased from the 613 collection 
-                or you can provide your own.
+                or you can provide your own. <br>
+                <img src="{{ url_for('static', filename='/imgs/custom_exp.jpg') }}" alt="custom_exp" >
+                <img src="{{ url_for('static', filename='/imgs/wig_on_bust.jpg') }}" alt="wig_on_bust" >
             </p>
             <br>
             <h2> Wig Customization - $75 </h2>
             <p> This service includes plucking, cutting, styling, coloring, etc. </p>
-        </div>
-        <br>
-        <div class="gallery">
-            <h2> Gallery </h2>
-            <img src="{{ url_for('static', filename='__.png') }}">
         </div>
     </div>
 </body>

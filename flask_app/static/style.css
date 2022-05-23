@@ -5,7 +5,7 @@
     font-size: 20px;
 }
 .nav-bar {
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
     height: 74px;
@@ -38,5 +38,6 @@ button, a {
 p {
     width:500px;
     font-family: cursive;
-
 }
+
+
