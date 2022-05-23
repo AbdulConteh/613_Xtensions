@@ -8,3 +8,7 @@ def index():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/checkout')
+def checkout():
+    return render_template('checkout.html')
