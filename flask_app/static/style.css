@@ -51,3 +51,8 @@ img {
     width: 200px;
     height: 300px;
 }
+
+.contact_info {
+    display: flex;
+    width: 670px;
+}

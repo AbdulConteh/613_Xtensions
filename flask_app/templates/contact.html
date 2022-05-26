@@ -12,16 +12,22 @@
 <body>
     <div class="container">
         <div class="nav-bar">
-            <button> Home </button>
+            <button><a href="/"> Home </a></button>
             <img src="{{ url_for('static', filename='/imgs/logo.png') }}" alt="logo" class="logo" >
             <button><a href="/contact"> Contact </a></button>
         </div>
-        <h1> Contact </h1>
-        <p> 
-            Email:
-            Instagram:
-            Phone Number:
-        </p>
+        <h1 style="font-size: 30px; color:white;"> Contact </h1>
+        <div class="contact_info">
+            <p> 
+                Facebook: Juanita Jackson <br>
+                Instagram: 613XTENSIONS <br>
+                Phone Number: (585) 802-8405 
+            </p>
+            <br>
+            <p >
+                <img src="{{ url_for('static', filename='/imgs/nita_party.jpg') }}" alt="owner_photo" class="owner_photo" >
+            </p>
+        </div>
     </div>
 </body>
 </html>
