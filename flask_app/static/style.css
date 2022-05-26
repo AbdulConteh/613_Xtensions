@@ -56,3 +56,9 @@ img {
     display: flex;
     width: 670px;
 }
+
+.cart{
+    height: 79px;
+    width: 100px;
+    margin-top: -10px;
+}

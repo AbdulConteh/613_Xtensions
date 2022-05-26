@@ -13,9 +13,12 @@
     <div class="container">
         <div class="nav-bar">
             <button><a href="/"> Home </a></button>
+            <button><a href="/shop"> Shop </a></button>
             <img src="{{ url_for('static', filename='/imgs/logo.png') }}" alt="logo" class="logo" >
             <button><a href="/contact"> Contact </a></button>
+            <a href="/checkout"><img src="{{ url_for('static', filename='/imgs/cart.jpg') }}" alt="cart" class="cart" ></a>
         </div>
+        <br>
         <h1 style="font-size: 30px; color:white;"> Contact </h1>
         <div class="contact_info">
             <p> 

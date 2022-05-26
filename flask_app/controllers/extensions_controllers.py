@@ -12,3 +12,7 @@ def contact():
 @app.route('/checkout')
 def checkout():
     return render_template('checkout.html')
+
+@app.route('/shop')
+def shop():
+    return render_template('shop.html')
