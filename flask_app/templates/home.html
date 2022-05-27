@@ -19,6 +19,42 @@
             <a href="/checkout"><img src="{{ url_for('static', filename='/imgs/cart.jpg') }}" alt="cart" class="cart" ></a>
         </div>
         <br>
+        <form action="/register" method="post">
+            <div>
+                <label for="first_name"> First Name: </label>
+                <input type="text" name="first_name" id="register">
+            </div>
+            <div>
+                <label for="last_name"> Last Name: </label>
+                <input type="text" name="last_name" id="register">
+            </div>
+            <div>
+                <label for="email"> Email: </label>
+                <input type="text" name="email" id="register">
+            </div>
+            <div>
+                <label for="password"> Password: </label>
+                <input type="text" name="password" id="register">
+            </div>
+            <div>
+                <label for="confirm_password"> Confirm Password: </label>
+                <input type="text" name="confirm_password" id="register">
+            </div>
+        </form>
+        <br>
+        <div class="login">
+            <form action="/login" method="post">
+                <div>
+                    <label for="email"> Email: </label>
+                    <input type="text" name="email" id="login">
+                </div>
+                <div>
+                    <label for="password"> Password: </label>
+                    <input type="text" name="password" id="login">
+                </div>
+            </form>
+        </div>
+        <br>
         <div class="services">
             <h2 > Wig Install - $120 </h2>
             <p>
