@@ -26,14 +26,14 @@
         {% endif %}
         {% endwith %}
         <div class="header">
-            <img src="{{ url_for('static', filename='/imgs/nita_party.jpg') }}" alt="owner_photo" class="owner_photo" > 
-            <h2> WELCOME TO 613XTENSIONS</h2>
+            <img src="{{ url_for('static', filename='/imgs/nita_party.jpg') }}" alt="owner_photo" class="owner_photo" style="border-radius:22%;"> 
+            <h2 style="color:gold; font-size:50px; font-family:serif; font-style:italic;"> WELCOME TO <br> 613<strong>X</strong>tensions</h2>
         </div>
         <br>
         <button onclick = "register()" style="background-color: black;"> Sign Up! </button>
         <button onclick="login()" style="background-color: black;"> Login! </button>
         <br>
-        <img src="{{ url_for('static', filename='/imgs/white_banner.png') }}" alt="banner" class="banner" style="width:800px; height:250px;">
+        <img src="{{ url_for('static', filename='/imgs/white_banner.jpg') }}" alt="banner" class="banner" style="width:100%; height: 100px;">
         <div class="login_and_register">
             <form action="/register" method="post" id="register" bg.secondary>
             <h2> Register </h2>
@@ -81,16 +81,15 @@
                 <input type="submit" value="Login">
             </form>
         </div>
-        <br>
         <h3 class="services_title"> Our Services </h3>
         <div class="services">
             <div class="service_tab">
                 <h2 > Wig Install </h2>
                 <br>
                 <p>
-                    Wig installation includes bleaching, plucking, and style. 
+                    Wig installation includes bleaching, plucking, and style. <br>
                     ** For best results we do encourage purchasing a wig from the 613 collection **
-                    <img src="{{ url_for('static', filename='/imgs/wig_install.jpg') }}" alt="wig_install" >
+                    <img src="{{ url_for('static', filename='/imgs/wig_install_3.jpg') }}" alt="wig_install" style="border-radius: 20%;" >
                     <!-- <img src="{{ url_for('static', filename='/imgs/wig_install_2.jpg') }}" alt="wig_install_2" > -->
                 </p>
             </div>
@@ -101,8 +100,8 @@
                 <p>
                     This service is for wig making. Bundles can be purchased from the 613 collection 
                     or you can provide your own. <br>
-                    <img src="{{ url_for('static', filename='/imgs/custom_exp.jpg') }}" alt="custom_exp" >
-                    <!-- <img src="{{ url_for('static', filename='/imgs/wig_on_bust.jpg') }}" alt="wig_on_bust" > -->
+                    <!-- <img src="{{ url_for('static', filename='/imgs/custom_exp.jpg') }}" alt="custom_exp" > -->
+                    <img src="{{ url_for('static', filename='/imgs/wig_on_bust_angles.jpg') }}" alt="wig_on_bust" style="border-radius: 20%;" >
                 </p>
             </div>
             <br>
@@ -110,17 +109,18 @@
                 <h2> Wig Customization </h2>
                 <br>
                 <p> This service includes plucking, cutting, styling, coloring, etc. </p>
+                <img src="{{ url_for('static', filename='/imgs/wig_on_bust.jpg') }}" alt="wig_on_bust" style="border-radius: 20%;" >
             </div>
         </div>
-        <h1 style="font-size: 30px; color:white;"> Contact </h1>
-        <div class="contact_info">
+        <img src="{{ url_for('static', filename='/imgs/white_banner.jpg') }}" alt="banner" class="banner" style="width:100%; height: 100px;">
+        <br>
+        <div id="contact_info">
+            <h1 style="font-size: 30px; color:white;"> Contact </h1>
+            <br>
             <p> 
                 Facebook: Juanita Jackson <br>
                 Instagram: 613XTENSIONS <br>
                 Phone Number: (585) 802-8405 
-            </p>
-            <br>
-            <p >
             </p>
         </div>
     </div>

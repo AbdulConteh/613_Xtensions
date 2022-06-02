@@ -4,6 +4,7 @@
     height: max-content;
     font-size: 20px;
     padding:5px;
+    width:max-content;
 }
 .nav-bar {
     background-color: white;
@@ -14,29 +15,27 @@
     padding: 10px;
 }
 
-button, a {
+button, a{
     background-color: white;
-    color: gold;
+    color: rgb(199, 170, 5);
     border: none;
 }
 
 .services {
     background-color: rgb(197 141 3);
-    width: 1300px;
     display: flex;
-    flex-direction: row;
     padding: 10px;
     justify-content: space-evenly;
+    width:100%;
 }
 
 .service_tab {
-    width: 282px;
+    width: 26%;
 }
 
 .services_title {
     text-align: center;
     background-color: rgb(197 141 3);
-    width:1300px;
 }
 
 .gallery {
@@ -46,24 +45,25 @@ button, a {
 }
 
 p {
-    width:300px;
+    width:88%;
     font-family: cursive;
 }
 
 .logo {
     width: 264px;
-        height: 303px;
-        margin-top: -118px;
+    height: 303px;
+    margin-top: -118px;
 }
 
 img {
-    width: 200px;
     height: 300px;
 }
 
-.contact_info {
+#contact_info {
     display: flex;
     width: 670px;
+    color:darkgoldenrod;
+    align-items: center;
 }
 
 .cart{
