@@ -12,10 +12,9 @@
 <body>
     <div class="container">
         <div class="nav-bar">
+            <img src="{{ url_for('static', filename='/imgs/logo_white.png') }}" alt="logo" class="logo" >
             <button><a href="/"> Home </a></button>
             <button><a href="/shop"> Shop </a></button>
-            <img src="{{ url_for('static', filename='/imgs/logo.png') }}" alt="logo" class="logo" >
-            <button><a href="/contact"> Contact </a></button>
             <a href="/checkout"><img src="{{ url_for('static', filename='/imgs/cart.jpg') }}" alt="cart" class="cart" ></a>
         </div>
         <br>
@@ -26,7 +25,17 @@
             {% endfor %}
         {% endif %}
         {% endwith %}
-        <form action="/register" method="post" class="register" bg.secondary>
+        <div class="header">
+            <img src="{{ url_for('static', filename='/imgs/nita_party.jpg') }}" alt="owner_photo" class="owner_photo" > 
+            <h2> WELCOME TO 613XTENSIONS</h2>
+        </div>
+        <br>
+        <button onclick = "register()" style="background-color: black;"> Sign Up! </button>
+        <button onclick="login()" style="background-color: black;"> Login! </button>
+        <br>
+        <img src="{{ url_for('static', filename='/imgs/white_banner.png') }}" alt="banner" class="banner" style="width:800px; height:250px;">
+        <div class="login_and_register">
+            <form action="/register" method="post" id="register" bg.secondary>
             <h2> Register </h2>
             <div class="form-group">
                 <label for="first_name"> First Name: </label>
@@ -50,48 +59,58 @@
             </div>
             <br>
             <input type="submit" value="Register">
-        </form>
-        <form action="/login" method="post" class="login">
-            {% with messages = get_flashed_messages(category_filter=['login']) %} 
-            {% if messages %}                           
-                {% for message in messages %}           
-                    <p>{{message}}</p>                  
-                {% endfor %}
-            {% endif %}
-            {% endwith %}
-            <h2> Login </h2>
-            <div class="form-group">
-                <label for="email"> Email: </label>
-                <input type="text" class="form-control" name="email" id="email" rows="3"></input>
-            </div>
-            <div class="form-group">
-                <label for="password"> Password: </label>
-                <input type="password" class="form-control" name="password" id="password" rows="3"></input>
-            </div>
-            <br>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+            </form>
+            <form action="/login" method="post" id="login">
+                {% with messages = get_flashed_messages(category_filter=['login']) %} 
+                {% if messages %}                           
+                    {% for message in messages %}           
+                        <p>{{message}}</p>                  
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}
+                <h2> Login </h2>
+                <div class="form-group">
+                    <label for="email"> Email: </label>
+                    <input type="text" class="form-control" name="email"  rows="3"></input>
+                </div>
+                <div class="form-group">
+                    <label for="password"> Password: </label>
+                    <input type="password" class="form-control" name="password"  rows="3"></input>
+                </div>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
         <br>
+        <h3 class="services_title"> Our Services </h3>
         <div class="services">
-            <h2 > Wig Install - $120 </h2>
-            <p>
-                Wig installation includes bleaching, plucking, and style. 
-                ** For best results we do encourage purchasing a wig from the 613 collection **
-                <img src="{{ url_for('static', filename='/imgs/wig_install.jpg') }}" alt="wig_install" >
-                <img src="{{ url_for('static', filename='/imgs/wig_install_2.jpg') }}" alt="wig_install_2" >
-            </p>
+            <div class="service_tab">
+                <h2 > Wig Install </h2>
+                <br>
+                <p>
+                    Wig installation includes bleaching, plucking, and style. 
+                    ** For best results we do encourage purchasing a wig from the 613 collection **
+                    <img src="{{ url_for('static', filename='/imgs/wig_install.jpg') }}" alt="wig_install" >
+                    <!-- <img src="{{ url_for('static', filename='/imgs/wig_install_2.jpg') }}" alt="wig_install_2" > -->
+                </p>
+            </div>
             <br>
-            <h2> Wig Construction - $175 </h2>
-            <p>
-                This service is for wig making. Bundles can be purchased from the 613 collection 
-                or you can provide your own. <br>
-                <img src="{{ url_for('static', filename='/imgs/custom_exp.jpg') }}" alt="custom_exp" >
-                <img src="{{ url_for('static', filename='/imgs/wig_on_bust.jpg') }}" alt="wig_on_bust" >
-            </p>
+            <div class="service_tab">
+                <h2> Wig Construction </h2>
+                <br>
+                <p>
+                    This service is for wig making. Bundles can be purchased from the 613 collection 
+                    or you can provide your own. <br>
+                    <img src="{{ url_for('static', filename='/imgs/custom_exp.jpg') }}" alt="custom_exp" >
+                    <!-- <img src="{{ url_for('static', filename='/imgs/wig_on_bust.jpg') }}" alt="wig_on_bust" > -->
+                </p>
+            </div>
             <br>
-            <h2> Wig Customization - $75 </h2>
-            <p> This service includes plucking, cutting, styling, coloring, etc. </p>
+            <div class="service_tab">
+                <h2> Wig Customization </h2>
+                <br>
+                <p> This service includes plucking, cutting, styling, coloring, etc. </p>
+            </div>
         </div>
         <h1 style="font-size: 30px; color:white;"> Contact </h1>
         <div class="contact_info">
@@ -102,9 +121,9 @@
             </p>
             <br>
             <p >
-                <img src="{{ url_for('static', filename='/imgs/nita_party.jpg') }}" alt="owner_photo" class="owner_photo" >
             </p>
         </div>
     </div>
+    <script type="text/javascript" src="{{ url_for('static',filename='script.js') }}"></script>
 </body>
 </html>

@@ -15,19 +15,28 @@
 }
 
 button, a {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: gold;
+    border: none;
 }
 
 .services {
-    background-color: gold;
-    width: 800px;
+    background-color: rgb(197 141 3);
+    width: 1300px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 437px;
+    flex-direction: row;
     padding: 10px;
-    border: outset white 10px;
+    justify-content: space-evenly;
+}
+
+.service_tab {
+    width: 282px;
+}
+
+.services_title {
+    text-align: center;
+    background-color: rgb(197 141 3);
+    width:1300px;
 }
 
 .gallery {
@@ -37,14 +46,14 @@ button, a {
 }
 
 p {
-    width:500px;
+    width:300px;
     font-family: cursive;
 }
 
 .logo {
-    width: 286px;
-    height: 260px;
-    margin-top: -102px;
+    width: 264px;
+        height: 303px;
+        margin-top: -118px;
 }
 
 img {
@@ -68,4 +77,25 @@ img {
     color: white;
     flex-direction: column;
     align-items: flex-start;
+}
+
+#login, #register {
+    width: 300px;
+    display: none;
+}
+
+.login_and_register {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.form-control {
+    height: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
